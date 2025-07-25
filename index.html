@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="main.js"></script>
+</head>
+<body style="margin:0px">
+
+    <div class="container">
+
+        <div class="left">
+            <div class="left_up">
+                <div class="MenuImagen"></div>
+                <!-- Informacion de  -->
+                <div style="width:7%; height: 100%; background-color: #f6d8a3;">
+                    <div class="NumImagen1">    
+                    </div>
+                    <div class="NumImagen2"></div>
+                </div>
+
+                <!-- botones -->
+                <div class="Tablero">
+                    <div class="IconosCono">
+                        <button onclick="agregarSimbolo('b')" class="Boton">
+                            <img src="img/iconos/botonConoBasico.png" height="54px" width="54px">
+                        </button>
+                        <button onclick="agregarSimbolo('w')" class="Boton">
+                            <img src="img/iconos/conoWaffleBoton.png" height="54px" width="54px">
+                        </button>
+                        <button onclick="agregarSimbolo('k')" class="Boton">
+                            <img src="img/iconos/canastaBoton.png" height="54px" width="54px">
+                        </button>
+                    </div>
+                    <div class="IconosNieve">
+                        <button onclick="agregarSimbolo('c')" class="Boton">
+                            <img src="img/iconos/chocolateBoton.png" height="54px" width="54px">
+                        </button>
+                        <button onclick="agregarSimbolo('f')" class="Boton">
+                            <img src="img/iconos/fresaBoton.png" height="54px" width="54px">
+                        </button>
+                        <button onclick="agregarSimbolo('v')" class="Boton">
+                            <img src="img/iconos/vainillaBoton.png" height="54px" width="54px">
+                        </button>
+                    </div>
+                </div>
+
+
+                <div style="width:31%; height: 100%; background-color: blue;">
+                    <div id="TOP">
+                    </div>
+                    <div class="TableroChico">
+                        <div class="IconosToppings">
+                            <button onclick="agregarSimbolo('j')" class="Boton">
+                                <img src="img/iconos/jarabeBoton.png" height="54px" width="54px">
+                            </button>
+                            <button onclick="agregarSimbolo('h')" class="Boton">
+                                <img src="img/iconos/chispasBoton.png" height="54px" width="54px">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="left_down">
+                <div class="ApartadoTexto">
+                    <div class="ContenidoApartadoTexto">
+                        <img  src="img/ApartadoCliente/cajaDeTexto.png" height="100%" width="100%" style="display: block;">
+                        <p class="Texto" id="palabra"></p>
+                    </div>
+                    
+                </div>
+                
+                <div class="PersonaHablando" style="position: relative;">
+                    <img  src="img/ApartadoCliente/PersonaHablando.png" height="100%" width="100%" style="display: block; position: absolute; z-index: 1;">
+                    <div style="width:25%; height:100%; z-index: 2;"></div>
+                    <div style="width:40%;z-index: 2;">
+                        <button onclick="terminarNodos()" class="Boton">
+                            <img  src="img/iconos/nubesTerminar.png" height="72px" width="234px;" style="padding-top: 40px;">
+                        </button>
+                    </div>
+
+                </div>
+                <!-- <div style="height: 29%; background-image: url('img/ApartadoCliente/cajaDeTexto.png'); background-repeat: no-repeat; background-size: contain; background-size: 82%,100%; background-position: center; "></div>
+                <div style="height: 71%; background-image: url('img/ApartadoCliente/PersonaHablando.png'); background-repeat: no-repeat; background-size: contain; background-size: 82%,100%; background-position: center;"></div> -->
+                <!-- <div style="width:100%; height: 100%; background-image: url('img/ApartadoCliente/ImagenCompleta.png'); background-repeat: no-repeat;  background-size:contain;"></div> -->
+            </div>
+        </div>
+        <div class="right">
+
+            <div class="main-container">
+                <div class="image-container">
+                    <div id="toppingJarabe">
+                    <img src="img/heladoCanasta/conoCanasta_jarabe.png" alt="JarabeDeChocolate" class="jarabeCanasta" id="topping"> 
+                    </div>
+                    <div id="toppingVacio">
+                        <img src="img/heladoCanasta/conoCanasta_frente_vacio.png" alt="Cono de Canasta" class="cone-front" id="CanastaTop">
+                    </div>
+                    <div id="toppingPos1">
+                        <img src="img/heladoCanasta/conoCanasta_Chocolate_Pos1.png" alt="ChocolatePos1" class="ice-cream-center" id="bola1">
+                    </div>
+                    <div id="toppingPos2">
+                        <img src="img/heladoCanasta/conoCanasta_chocolate_pos2.png" alt="ChocolatePos2" class="ice-cream-right" id="bola2">
+                    </div>
+                    <div id="toppingPos3">
+                        <img src="img/heladoCanasta/conoCanasta_chocolate_pos3.png" alt="ChcolatePos3" class="ice-cream-left" id="bola3">
+                    </div>
+                    <div id="toppingFrenteVacio">
+                        <img src="img/heladoCanasta/conoCanasta_vacio.png" alt="Cono de Canasta frente vacio" class="cone-back" id="cono">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- <div class="contenedor"> 
+        <img src="conoCanasta/conoCanasta_FRENTE_vacio.png" class="img-2">
+        <img src="conoCanasta/conoCanasta_vacio.png" > 
+    </div>
+    <img src="conoCanasta/conoCanasta_Vainilla_Pos1.png"class="img-1"> -->
+
+  
+    <!-- <button onclick="terminarNodos()">Terminar</button> -->
+
+</body>
+</html>

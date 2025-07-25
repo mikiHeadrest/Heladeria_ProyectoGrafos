@@ -1,0 +1,232 @@
+
+@font-face{
+    font-family: 'DETERMINATION'; /* */
+    src: url('fonts/dtm-sans.ttf') format('truetype');
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* 100% de la altura de la pantalla */
+    width: 100vw; /* 100% del ancho de la pantalla */
+}
+
+
+.left {
+    background-color: blue;
+    width: 62%;
+    height: 100%;
+}
+
+.right {
+    background-color: #D4BEE4;
+    width: 38%;
+    height: 98.6%;
+    border: 5px solid #7c6199;
+
+}
+
+.left_up{
+    display: flex;
+    background-color: coral;
+    width:100%;
+    height:30%;
+    flex-direction: row;
+}
+
+.left_down{
+    background-color: #9c6cce;
+    width:100%;
+    height:70%
+}
+
+.MenuImagen{
+    width:25%; 
+    height: 100%; 
+    background-image: url('img/MenuApartado/menuArribaIzquierda.png'); 
+    background-repeat: no-repeat; 
+    background-size:contain;
+    background-size:cover;
+    background-size: 100%,100%;
+}
+
+.NumImagen1,.NumImagen2{
+    width:100%;
+    height:50%;
+    background-repeat: no-repeat; 
+    background-size:contain;
+    background-size:cover;
+    background-size: 100%,100%;
+}
+
+.NumImagen1{
+    background-image: url('img/MenuApartado/menuArriba1.png'); 
+}
+.NumImagen2{
+    background-image: url('img/MenuApartado/menuArriba2.png'); 
+}
+
+.Tablero{
+    width:37%; 
+    height: 100%; 
+    background-image: url('img/MenuApartado/menuArriba_Enfrente.png'); 
+    background-repeat:no-repeat; 
+    background-size: cover; 
+    background-size: 100%,100%;
+}
+
+#TOP{
+    width:100%; 
+    height:40%; 
+    background-image: url('img/MenuApartado/menuArriba_DerechaArriba.png'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-size: 100%,100%;
+}
+
+.TableroChico{
+    width:100%; 
+    height:60%; 
+    background-image: url('img/MenuApartado/menuArriba_DerechaDebajo.png'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-size: 100%,100%;
+}
+
+.ApartadoTexto{
+    height: 23%; 
+    background-color: blueviolet;
+}
+
+.ContenidoApartadoTexto{
+    position: relative; 
+    width: 100%; 
+    height: 100%;
+}
+
+.Texto{
+    position: absolute; 
+    top: -40%; 
+    left:4%; 
+    font-family: 'DETERMINATION',sans-serif; 
+    font-size: 64px; 
+    width: 80%;
+}
+
+.PersonaHablando{
+    height: 77%; 
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+}
+
+.Boton{
+    background-color: transparent;
+    border: none;
+}
+
+.IconosCono{
+    width:94.5%;
+    height:50%;  
+    margin-top: 10px; 
+    margin-left: 10px; 
+    display:flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-around;
+}
+
+.IconosNieve{
+    width:94.5%;
+    height:39%; 
+    display:flex; 
+    margin-left: 10px; 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-around;
+}
+
+.IconosToppings{
+    width:80%;
+    height:82%; 
+    display:flex; 
+    margin-left: 30px; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 30px; 
+    padding-top: 3px;
+}
+
+/* echale ganas lópez */
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+/* Contenedor de las imágenes */
+.image-container {
+    position: relative;
+    width: 315px; /* Tamaño ampliado para que el helado resalte */
+    height: 441px; /* Tamaño ampliado */
+}
+
+/* Estilos individuales para las imágenes */
+.cone-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Capa de fondo */
+}
+
+.ice-cream-center {
+    position: absolute;
+    top: 0px; /* Ajustado para centrar la bola de helado */
+    left: 0%;
+    width: 100%; /* Dimensiones aumentadas */
+    height: auto;
+    z-index: 2;
+}
+
+.ice-cream-right {
+    position: absolute;
+    width: 100%; /* Dimensiones aumentadas */
+    height: auto;
+    z-index: 2;
+}
+
+.ice-cream-left {
+    position: absolute;
+    width: 100%; /* Dimensiones aumentadas */
+    height: auto;
+    z-index: 2;
+}
+
+.jarabeCanasta{
+    position: absolute;
+    width: 100%; /* Dimensiones aumentadas */
+    height: auto;
+    z-index: 3;
+}
+
+.cone-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+    z-index: 3; /* Capa de frente para ocultar las bolas parcialmente */
+}
+
+#toppingJarabe, #toppingVacio, #toppingPos1, #toppingPos2, #toppingPos3, #toppingFrenteVacio{
+    display: none;
+} 
+
