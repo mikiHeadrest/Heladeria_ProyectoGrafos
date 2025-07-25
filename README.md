@@ -4,7 +4,7 @@ Hola, este proyecto de grafos, el usuario hace una orden y en base a la orden se
 
 El usuario puede seleccionar el tipo de cono, su sabor y por ultimo un topping
 
-Primero empieza con el tipo de cono
+Primero empieza con el tipo de cono<br>
 1.1. Seleccionar 1 cono pequeño (1 bola de nieve y 1 topping) <br>
 
 1.2. Seleccionar 1 cono mediano (2 bolas de nieve y 1 topping) <br>
